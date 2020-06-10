@@ -165,7 +165,7 @@ $user1=$user1[0];
                                     $result=mysqli_query($link, $query);
                                     print "You will return to the start page in 10 seconds";
                                     mysqli_close($link);
-                                    header ('Refresh:10; URL = http://localhost/laba2/index.php');
+                                    header ('Refresh:10; URL = index.php');
                                     die();
                                 }
                                 if (($status[0]==3 AND $user!=$user1) OR ($status[0]==4 AND $user==$user1)) {
@@ -198,14 +198,14 @@ $user1=$user1[0];
                                     $result=mysqli_query($link, $query);
                                     print "~You will return to the start page in 10 seconds~";
                                     mysqli_close($link);
-                                    header ('Refresh:10; URL = http://localhost/laba2/index.php');
+                                    header ('Refresh:10; URL = index.php');
                                     die();
                                 }
                         ?>
                         </h2>
                         <label><input type="submit" name="drop" class="btn btn-success" value="Drop!"></label>
                         <label><input type="submit" name="pass" class="btn btn-success" value="Pass!"></label> <br>
-                        <h3 class="alert alert-warning">
+                        <h2 class="alert alert-warning">
                         <?php
                             if(array_key_exists('drop',$_POST)){
                                  $query="SELECT total FROM games WHERE id='$id'";
@@ -307,7 +307,7 @@ $user1=$user1[0];
                         </h2>
                         <br>
                         <h2 class="alert alert-warning">
-                        <br> <a href="http://localhost/laba2/index.php"> Give up... </a> 
+                        <br> <a href="index.php"> Give up... </a>
                          </h2>
                         </div3>
                 </form>

@@ -4,7 +4,7 @@
     $password=$_POST['pswrd'];
     $confirm=$_POST['confirm'];
     if ($password!=$confirm) {
-        header("Location: http://localhost/laba2/signupNOTEQUAL.php");
+        header("Location: signupNOTEQUAL.php");
         die();
     }
     $query="SELECT login FROM users";
@@ -12,7 +12,7 @@
     for ($i=0; $i<mysqli_num_rows($result); ++$i){
         $acc = mysqli_fetch_row($result);
         if($login==$acc[0]){
-            header("Location: http://localhost/laba2/signupALREXIST.php");
+            header("Location: signupALREXIST.php");
             die();
         }
     }
@@ -26,7 +26,7 @@
         $result = mysqli_query($link, $query);
         setcookie('cookie_token', $token);
         setcookie('cookie_create_time', time());
-        header("Location: http://localhost/laba2/index.php");
+        header("Location: index.php");
         mysqli_close($link);
         die();
     }

@@ -1,6 +1,6 @@
  <?php
    if (isset($_COOKIE['cookie_token'])) {
-        header("Location: http://localhost/laba2/index.php");
+        header("Location: index.php");
         die();
     }
  ?>

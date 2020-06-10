@@ -1,7 +1,7 @@
 <?php
    require_once 'database.php';
    if (!isset($_COOKIE['cookie_token'])) {
-        header("Location: http://localhost/laba2/login.php"); 
+        header("Location: login.php");
         die();
    }
    $token=$_COOKIE['cookie_token'];
@@ -100,7 +100,7 @@ exist:
                 <form method="post" action="wait.php">
                 <div1>
                   <h3 class="alert alert-warning">
-                <a href="http://localhost/laba2/RateTable.php"> See the RateTable </a>
+                <a href="RateTable.php"> See the RateTable </a>
                 </h3>
                 </div1>
                 <div align="center">
@@ -112,7 +112,7 @@ exist:
                 </h1> <br>
                 <input type="submit" class="btn btn-success" value="PLAY"> <br>
                 <h3 class="alert alert-warning"> 
-                <br> <a href="http://localhost/laba2/auth.php"> Log out </a>
+                <br> <a href="auth.php"> Log out </a>
                  </h3>
                 </div>
                 </form>

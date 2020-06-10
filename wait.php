@@ -18,7 +18,7 @@ if($user==$user1[0]){
     if ($user2[0]!=NULL){
         $query = "UPDATE players SET time = 0 WHERE login = '$user'";
         $result=mysqli_query($link, $query);
-        header("Location: http://localhost/laba2/game.php");
+        header("Location: game.php");
         die();
     }
     goto exist;
@@ -28,7 +28,7 @@ if ($user2[0]==NULL){
      $result=mysqli_query($link, $query);
      $query = "UPDATE players SET time = 0 WHERE login = '$user'";
      $result=mysqli_query($link, $query);
-     header("Location: http://localhost/laba2/game.php");
+     header("Location: game.php");
      die();
 }
 else {

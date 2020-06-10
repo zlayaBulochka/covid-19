@@ -14,7 +14,7 @@ if (isset($_COOKIE['cookie_token'])){
    setcookie('cookie_token', '');
    setcookie('cookie_create_time', '');
    setcookie('cookie_time', '');
-   header("Location: http://localhost/laba2/login.php");
+   header("Location: login.php");
    die();
 }
 $login=$_POST['login'];
@@ -28,7 +28,7 @@ for ($i=0; $i<mysqli_num_rows($result); ++$i){
     }
 }
 mysqli_close($link);
-header("Location: http://localhost/laba2/loginDOESNTEXIST.php");
+header("Location: loginDOESNTEXIST.php");
 die();
 exist:
 $query="SELECT password FROM users WHERE login = '$login'";
@@ -42,10 +42,10 @@ if (password_verify ($password,$hash_password)){
     setcookie('cookie_token', $token);
     setcookie('cookie_create_time', time());
     mysqli_close($link);
-    header("Location: http://localhost/laba2/index.php");
+    header("Location: index.php");
 }
 else {
     mysqli_close($link);
-    header("Location: http://localhost/laba2/loginWRONGPASS.php");
+    header("Location: loginWRONGPASS.php");
 }
 ?>
