@@ -1,6 +1,6 @@
-# album
+# project
 
-  ![sdf](https://app.buddy.works/mariann09012000/covid-19/pipelines/pipeline/263387/trigger-webhook?token=1002c2ac5ed82ba00029f8115165cc1cead1bf65ba34ac6359041558ec5f8f25c06b6c9d76e11fc1f0268d8e4985697f)
+ (https://app.buddy.works/mariann09012000/covid-19/pipelines/pipeline/263387/trigger-webhook?token=1002c2ac5ed82ba00029f8115165cc1cead1bf65ba34ac6359041558ec5f8f25c06b6c9d76e11fc1f0268d8e4985697f)
   ---
 ### Последние изменения ###
 
