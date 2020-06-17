@@ -1,16 +1,17 @@
 # album
 
-  ![sdf](https://app.buddy.works/bardovskialesha/album/pipelines/pipeline/261158/badge.svg?token=69cdf0c2471d5cd3e5c34d789ca0bcec824a5504e456a44410be3a02f5c4d50d)
+  ![sdf](https://app.buddy.works/mariann09012000/covid-19/pipelines/pipeline/263387/trigger-webhook?token=1002c2ac5ed82ba00029f8115165cc1cead1bf65ba34ac6359041558ec5f8f25c06b6c9d76e11fc1f0268d8e4985697f)
   ---
 ### Последние изменения ###
 
-[Release](https://github.com/Alex-Bard/album/releases)
+[Release](https://github.com/zlayaBulochka/covid-19/releases)
 
   ---
 
 ### Установка на Ubuntu ###
 * Установить Lamp 
 >sudo apt update
+>sudo apt upgrade
 
 Установка apache2
 
@@ -47,7 +48,7 @@
 >FLUSH PRIVILEGES;
 
 * Импортировать базу данных из дампа
-[Album](https://github.com/Alex-Bard/album/blob/screenshots/Mysql/album.sql)
+[Album](https://github.com/zlayaBulochka/covid-19/pig.sql)
 
 * Установить git
 >sudo apt install git
@@ -63,7 +64,7 @@
 
  В папке, в которой хотите расположить проект выполните команду
  
->git clone https://github.com/Alex-Bard/album.git
+>git clone https://github.com/zlayaBulochka/covid-19.git
 
 * Установить необходимые зависимости 
 >composer install
